@@ -9,10 +9,6 @@ export class PractitionerRepository {
         this.db = db;
     }
 
-    public async getAllPractitioners() {
-        return this.db.all('SELECT * FROM practitioners;');
-    }
-
     public async createPractitioner(
         practitionerReq: PractitionerRequest
     ): Promise<number> {

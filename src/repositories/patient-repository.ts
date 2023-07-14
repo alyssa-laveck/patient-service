@@ -10,10 +10,6 @@ export class PatientRepository {
         this.db = db;
     }
 
-    public async getAllPatients() {
-        return this.db.all('SELECT * FROM patients;');
-    }
-
     public async createPatient(patientReq: PatientRequest): Promise<number> {
         try {
             const {

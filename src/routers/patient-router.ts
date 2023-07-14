@@ -44,7 +44,6 @@ patientRouter.get('/search', async (req, res) => {
             return res.status(404).send('Patient Not Found');
         }
 
-        // TODO: DTO
         return res.status(200).json(patient);
     } catch (error) {
         console.error(error);
@@ -82,7 +81,6 @@ patientRouter.get('/search-by-practitioner', async (req, res) => {
                 );
         }
 
-        // TODO: DTO
         return res.status(200).json(patients);
     } catch (error) {
         console.error(error);
